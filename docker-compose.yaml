@@ -1,0 +1,12 @@
+services:
+  bound_mpc:
+    image: "bound_mpc:latest"
+    container_name: bound_mpc
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - ./bound_mpc:/home/ubuntu/ros2_ws/src/bound_mpc
+      - ./boundmpcmsg:/home/ubuntu/ros2_ws/src/boundmpcmsg
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    network_mode: "host"

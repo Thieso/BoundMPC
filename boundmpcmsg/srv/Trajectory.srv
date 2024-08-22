@@ -1,0 +1,19 @@
+std_msgs/Header header
+Vector[] p_via
+Vector[] r_via
+Vector[] p_upper
+Vector[] p_lower
+Vector[] r_upper
+Vector[] r_lower
+Vector[] bp1
+Vector[] br1
+Vector s
+Vector e_p_max
+Vector e_r_max
+Vector e_p_min
+Vector e_r_min
+Vector p0
+Vector q0
+bool update
+---
+bool success
