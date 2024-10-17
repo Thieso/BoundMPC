@@ -2,7 +2,8 @@
 
 Implementation of the paper 
 "BoundMPC: Cartesian Path Following with Error Bounds based on Model
-Predictive Control in the Joint Space". TODO link
+Predictive Control in the Joint Space". 
+Paper: [https://arxiv.org/abs/2401.05057](https://arxiv.org/abs/2401.05057)
 
 ## Dependencies
 
