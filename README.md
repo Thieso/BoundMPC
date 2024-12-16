@@ -3,7 +3,12 @@
 Implementation of the paper 
 "BoundMPC: Cartesian Path Following with Error Bounds based on Model
 Predictive Control in the Joint Space". 
+
 Paper: [https://arxiv.org/abs/2401.05057](https://arxiv.org/abs/2401.05057)
+
+Video: [https://www.acin.tuwien.ac.at/42d0/](https://www.acin.tuwien.ac.at/42d0/)
+
+![mpc_schematic](img/mpc_scheme.png)
 
 ## Dependencies
 
@@ -16,13 +21,6 @@ The implementation uses [ROS2 humble](https://docs.ros.org/en/humble/index.html)
 for inter-proces-communication and [Casadi](https://web.casadi.org/) for the
 automatic differentiation to provide the required analytical derivatives to the
 [Ipopt](https://coin-or.github.io/Ipopt/) solver.
-
-## Real-time performance
-
-The experiments do not run in real-time since the [HSL MA57
-solver](https://www.hsl.rl.ac.uk/catalogue/hsl_ma57.html) is required for that.
-This solver is not open source and in the interest of providing runable code to
-everyone, we provide the implmentation without using the HSL MA57 solver.
 
 ## Running the example experiments
 
@@ -63,6 +61,13 @@ ros2 launch bound_mpc experiment2.launch.py
 
 You should see an RViz window with a visualization of the robot during its
 motion.
+
+## Real-time performance
+
+The experiments do not run in real-time since the [HSL MA57
+solver](https://www.hsl.rl.ac.uk/catalogue/hsl_ma57.html) is required for that.
+This solver is not open source and in the interest of providing runable code to
+everyone, we provide the implmentation without using the HSL MA57 solver.
 
 ## Troubleshooting
 

@@ -65,7 +65,6 @@ def generate_launch_description():
     tf2_opti2base = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        # arguments=['0', '0.31', '0', '0', '0', '0', 'map', 'r1/world']
         arguments=['0.13', '-0.205', '0.01', '0', '0', '0', 'map', 'r1/world']
     )
 
