@@ -4,7 +4,7 @@ Implementation of the paper
 "BoundMPC: Cartesian Path Following with Error Bounds based on Model
 Predictive Control in the Joint Space". 
 
-Paper: [https://arxiv.org/abs/2401.05057](https://arxiv.org/abs/2401.05057)
+Paper: [https://journals.sagepub.com/doi/10.1177/02783649241309354](https://journals.sagepub.com/doi/10.1177/02783649241309354)
 
 Video: [https://www.acin.tuwien.ac.at/42d0/](https://www.acin.tuwien.ac.at/42d0/)
 
@@ -61,6 +61,16 @@ ros2 launch bound_mpc experiment2.launch.py
 
 You should see an RViz window with a visualization of the robot during its
 motion.
+
+## Using BoundMPC in your work
+
+If you want to use BoundMPC and adapt it to your specific needs, I recommend taking a look at the following files
+
+- `bound_mpc/bound_mpc/BoundMPC/BoundMPC.py`
+- `bound_mpc/bound_mpc/BoundMPC/casadi_ocp_formulation.py`
+
+which contain the formulation of the OCP and how to call it. 
+If you have any problems, feel free to open an issue.
 
 ## Real-time performance
 
