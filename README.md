@@ -1,12 +1,14 @@
 # BoundMPC
 
-Implementation of the paper 
+Implementation of the paper
 "BoundMPC: Cartesian Path Following with Error Bounds based on Model
-Predictive Control in the Joint Space". 
+Predictive Control in the Joint Space".
 
 Paper: [https://journals.sagepub.com/doi/10.1177/02783649241309354](https://journals.sagepub.com/doi/10.1177/02783649241309354)
 
 Video: [https://www.acin.tuwien.ac.at/42d0/](https://www.acin.tuwien.ac.at/42d0/)
+
+BoundMPC was adapted and combined with the path planner [BoundPlanner](https://arxiv.org/abs/2502.13286). The implementation of this combination is provided here [https://github.com/Thieso/BoundPlanner](https://github.com/Thieso/BoundPlanner). It is recommended to use this implementation for automated path planning for BoundMPC.
 
 ![mpc_schematic](img/mpc_scheme.png)
 
@@ -31,7 +33,7 @@ container using
 docker build -t bound_mpc .
 ```
 
-and then run the docker container with 
+and then run the docker container with
 
 ```
 docker compose up
@@ -69,7 +71,7 @@ If you want to use BoundMPC and adapt it to your specific needs, I recommend tak
 - `bound_mpc/bound_mpc/BoundMPC/BoundMPC.py`
 - `bound_mpc/bound_mpc/BoundMPC/casadi_ocp_formulation.py`
 
-which contain the formulation of the OCP and how to call it. 
+which contain the formulation of the OCP and how to call it.
 If you have any problems, feel free to open an issue.
 
 ## Real-time performance
@@ -81,8 +83,8 @@ everyone, we provide the implmentation without using the HSL MA57 solver.
 
 ## Troubleshooting
 
-If you use Linux and do not see an RViz window you need to run 
+If you use Linux and do not see an RViz window you need to run
 
 ```
-xhost + 
+xhost +
 ```
