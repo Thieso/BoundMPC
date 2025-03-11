@@ -8,7 +8,7 @@ Paper: [https://journals.sagepub.com/doi/10.1177/02783649241309354](https://jour
 
 Video: [https://www.acin.tuwien.ac.at/42d0/](https://www.acin.tuwien.ac.at/42d0/)
 
-BoundMPC was adapted and combined with the path planner [BoundPlanner](https://arxiv.org/abs/2502.13286). The implementation of this combination is provided here [https://github.com/Thieso/BoundPlanner](https://github.com/Thieso/BoundPlanner). It is recommended to use this implementation for automated path planning for BoundMPC.
+BoundMPC was adapted and combined with the path planner [BoundPlanner](https://arxiv.org/abs/2502.13286). The implementation of this combination is provided here [https://github.com/TU-Wien-ACIN-CDS/BoundPlanner](https://github.com/TU-Wien-ACIN-CDS/BoundPlanner). It is recommended to use this implementation for automated path planning for BoundMPC.
 
 ![mpc_schematic](img/mpc_scheme.png)
 
